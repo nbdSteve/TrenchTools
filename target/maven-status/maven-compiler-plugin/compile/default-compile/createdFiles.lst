@@ -1,0 +1,11 @@
+com\nbdSteve\trenchTools\event\BlockBreak.class
+com\nbdSteve\trenchTools\event\gui\GuiClick.class
+com\nbdSteve\trenchTools\file\providedFile\GenerateProvidedFile.class
+com\nbdSteve\trenchTools\support\Factions.class
+com\nbdSteve\trenchTools\file\LoadProvidedFiles.class
+com\nbdSteve\trenchTools\command\TrenchCommand.class
+com\nbdSteve\trenchTools\gui\TrenchGui.class
+com\nbdSteve\trenchTools\support\MassiveCore.class
+com\nbdSteve\trenchTools\file\LoadProvidedFiles$Files.class
+com\nbdSteve\trenchTools\support\WorldGuard.class
+com\nbdSteve\trenchTools\TrenchTools.class

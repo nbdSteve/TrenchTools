@@ -1,0 +1,132 @@
+#
+# TrenchTools messages.yml v3.0
+#
+# Message sent to the player when they type the /trench help command.
+# Requires permission: trench.help
+help:
+- "&7 "
+- "&f&lTrenchTools &7- &emade by &6&lnbdSteve"
+- "&7 "
+- "&3/trench give <player> <item> <level> <amount>"
+- "&7Give the target player their item with the &d&otrench&7 enchantment."
+- "&7The player must be online and the level must be between 1-5."
+- "&7The <item> must be a valid &e&lMINECRAFT&r &7material, e.g. &fdiamond_pickaxe&7."
+- "&7Specify an amount that is 1 or greater, if you put no amount it will not give you an item."
+- "&7Valid item entries are &e&lANY&r &7minecraft item."
+- "&7Requires premission node: &ftrench.give"
+- "&7 "
+- "&3/trench reload"
+- "&7Reload the config.yml file."
+- "&7Requires premission node: &ftrench.reload"
+- "&7 "
+#
+
+#
+# Message sent to the player when they type the /trench reload command.
+# Requires permission: trench.reload
+reload:
+- "&7 "
+- "&f&lTrenchTools:"
+- "&a&lSUCCESS!&7 You just reloaded all of the configuration files."
+- "&7 "
+#
+
+#
+# Message sent to the player when they purchase a tool from the GUI menu.
+# Requires permission: trench.gui to view the GUI.
+purchase:
+- "&7 "
+- "&f&lTrenchTools:"
+- "&a&lSUCCESS!&7 Your new tool has been added to your inventory! &c$%cost%&7, has been taken from your account."
+- "&7 "
+#
+
+#
+# Message sent to the player when they open the GUI with /trench.
+# Requires permission: trench.gui to view the GUI.
+open-gui:
+- "&7 "
+- "&f&lTrenchTools:"
+- "&7Searching the universe for the &bTrenchTools&7 merchant..."
+- "&7 "
+#
+
+#
+# Message sent to the player when they type an invalid command.
+# No permission required.
+invalid-command:
+- "&7 "
+- "&f&lTrenchTools:"
+- "&c&lERROR!&7 The command you entered is &b&lINVALID&7 please see &e/trench help&7 for command help."
+- "&7 "
+#
+
+#
+# Message sent to the player when they type a command and don't have permission.
+# No permission required.
+no-permission:
+- "&7 "
+- "&f&lTrenchTools:"
+- "&c&lERROR!&7 You do not have permission to use that!"
+- "&7 "
+#
+
+#
+# Message sent to the player if they do not have permission to purchase the tool from the GUI.
+# No permission required.
+no-buy-permission:
+- "&7 "
+- "&f&lTrenchTools:"
+- "&c&lERROR!&7 You do not have permission to purchase that TrenchTool!"
+- "&7 "
+#
+
+#
+# Message sent to the player when they type a command and the player is invalid.
+# Command permission required.
+invalid-player:
+- "&7 "
+- "&f&lTrenchTools:"
+- "&c&lERROR!&7 The player who entered is not online."
+- "&7 "
+#
+
+#
+# Message sent to the player when they type a command and the amount is invalid.
+# Command permission required.
+invalid-amount:
+- "&7 "
+- "&f&lTrenchTools:"
+- "&c&lERROR!&7 The amount you entered is &b&lINVALID&7, make sure the amount is a positive integer greater than 0."
+- "&7 "
+#
+
+#
+# Message sent to the player when they type a command and the size of trench is invalid.
+# Command permission required.
+invalid-level:
+- "&7 "
+- "&f&lTrenchTools:"
+- "&c&lERROR!&7 The enchantment size you entered is &b&lINVALID&7, make sure the enchantment size is between 1 - 5."
+- "&7 "
+#
+
+#
+# Message sent to the player if they do not have enough money.
+# Requires permission: trench.gui to view the GUI.
+insufficient-funds:
+- "&7 "
+- "&f&lTrenchTools:"
+- "&c&lERROR!&7 You do not have enought money to buy that! You only have &c$%bal%&7 and that tool costs &c$%cost%&7."
+- "&7 "
+#
+
+#
+# Message sent to the player if they try to buy a tool and their inventory is full.
+# Requires permission: trench.gui to view the GUI.
+inventory-full:
+- "&7 "
+- "&f&lTrenchTools:"
+- "&c&lERROR!&7 Your inventory is full, free some space to buy the tool."
+- "&7 "
+#

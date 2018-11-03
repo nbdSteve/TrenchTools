@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Factions">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dependencies/Factions.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependencies/MassiveCore.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependencies/SavageFactions.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependencies/Vault.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependencies/worldedit-bukkit-6.1.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependencies/worldguard-bukkit-6.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/dependencies/Factions.jar!/" />
+      <root url="jar://$PROJECT_DIR$/dependencies/MassiveCore.jar!/" />
+    </SOURCES>
+  </library>
+</component>

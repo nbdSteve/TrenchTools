@@ -1,0 +1,267 @@
+#
+# TrenchTools trench.yml v3.0
+#
+# The list of blocks that will not be broken by the TrenchTools.
+# Make sure that you enter the correct minecraft name of an item.
+# See this link for more information about names: https://minecraft-ids.grahamedgecombe.com/
+blacklisted-block-list:
+- hopper
+- bedrock
+- mob_spawner
+
+# -------------------------------------------------------------
+# Start configuration for TrenchTool1
+#
+trench-tool-1:
+  # The name of the item given to a player with the '/trench give' command.
+  name: "&f&lGIGA DRILL &7(&b3x3&7)"
+  #
+  # IMPORTANT: Make sure this is located in the Lore section of this configuration.
+  # And make sure it is unique to the 3x3 items, this will tell the plugin what it is looking for.
+  unique: "&3Trench I"
+  #
+  # this + blocks-mined-increment-id will replace that line in the lore when the player mines blocks.
+  blocks-mined-unique-line-id: "&5&lBLOCKS MINED:"
+  blocks-mined-increment-id: "&d&l%blocksMined%"
+  #
+  # The radius for the pickaxe to break around the block, this can be even and odd. a radius of 1 is
+  # 1 block away from the mined block, so this is a 3x3x3 pickaxe; a radius of 2 = 5x5x5 etc.
+  radius: 1
+  #
+  # Enchantments that will be applied to the tool with the /trench give command
+  # IMPORTANT: make sure to use these enchantment names https://docs.oc.tc/reference/enchantments (vanilla names may not work!).
+  # ENCHANTMENT NAME-LEVEL
+  enchantments:
+  - DIG_SPEED-5
+  - DURABILITY-3
+  #
+  # Enchantment Lore, you can make this as many lines as you would like.
+  # In v2.1.2 you can put the %blocksMined% placeholder anywhere in the lore (must be after the 'blocks-mined-unique-line-id').
+  lore:
+  - "&3Trench I"
+  - "&7 "
+  - "&5&lBLOCKS MINED: &d&l%blocksMined%"
+  - "&7 "
+  - "&7&oThis tool was engineered to trench."
+  - "&7&oHarness and abuse the great power of it..."
+#
+
+#
+# The following configuration is for the item displayed in the GUI menu.
+# This item will not be given to the player, the TrenchTool1 item will be given.
+trench-tool-1-gui:
+  # If this item will be in the GUI.
+  enabled: true
+  name: "&f&lGIGA DRILL &7(&b3x3&7)"
+  unique: "&3Trench I"
+  enchantments:
+  - DIG_SPEED-5
+  - DURABILITY-3
+  lore:
+  - "&3Trench I"
+  - "&7 "
+  - "&7&oThis tool was engineered to trench."
+  - "&7&oHarness and abuse the great power of it..."
+  - "&7 "
+  - "&5&lBLOCKS MINED: &d&l%blocksMined%"
+  - "&7 "
+  - "&7&m---------------------------------"
+  - "&a&lBUY PRICE: &f$1,000,000"
+  - "&7&m---------------------------------"
+  # The actual item in the gui (this is the item that will be given to the player).
+  gui-item: diamond_pickaxe
+  # The slot in the GUI that this item will be.
+  gui-slot: 11
+  # The price of the TrenchTool, this will be taken from the players account.
+  price: 1000000
+#
+# End configuration for TrenchTool1
+# -------------------------------------------------------------
+
+# -------------------------------------------------------------
+# Start configuration for TrenchTool2
+#
+trench-tool-2:
+  name: "&f&lGIGA DRILL &7(&b5x5&7)"
+  unique: "&3Trench II"
+  blocks-mined-unique-line-id: "&5&lBLOCKS MINED:"
+  blocks-mined-increment-id: "&d&l%blocksMined%"
+  radius: 2
+  enchantments:
+  - DIG_SPEED-5
+  - DURABILITY-3
+  lore:
+  - "&3Trench II"
+  - "&7 "
+  - "&7&oThis tool was engineered to trench."
+  - "&7&oHarness and abuse the great power of it..."
+  - "&7 "
+  - "&5&lBLOCKS MINED: &d&l%blocksMined%"
+#
+
+#
+trench-tool-2-gui:
+  enabled: true
+  name: "&f&lGIGA DRILL &7(&b5x5&7)"
+  unique: "&3Trench II"
+  enchantments:
+  - DIG_SPEED-5
+  - DURABILITY-3
+  lore:
+  - "&3Trench II"
+  - "&7 "
+  - "&7&oThis tool was engineered to trench."
+  - "&7&oHarness and abuse the great power of it..."
+  - "&7 "
+  - "&5&lBLOCKS MINED: &d&l%blocksMined%"
+  - "&7 "
+  - "&7&m---------------------------------"
+  - "&a&lBUY PRICE: &f$2,000,000"
+  - "&7&m---------------------------------"
+  gui-item: diamond_pickaxe
+  gui-slot: 12
+  price: 2000000
+#
+# End configuration for TrenchTool2
+# -------------------------------------------------------------
+
+# -------------------------------------------------------------
+# Start configuration for TrenchTool3
+#
+trench-tool-3:
+  name: "&f&lGIGA DRILL &7(&b7x7&7)"
+  unique: "&3Trench III"
+  blocks-mined-unique-line-id: "&5&lBLOCKS MINED:"
+  blocks-mined-increment-id: "&d&l%blocksMined%"
+  radius: 3
+  enchantments:
+  - DIG_SPEED-5
+  - DURABILITY-3
+  lore:
+  - "&3Trench III"
+  - "&7 "
+  - "&7&oThis tool was engineered to trench."
+  - "&7&oHarness and abuse the great power of it..."
+  - "&7 "
+  - "&5&lBLOCKS MINED: &d&l%blocksMined%"
+#
+
+#
+trench-tool-3-gui:
+  enabled: true
+  name: "&f&lGIGA DRILL &7(&b7x7&7)"
+  unique: "&3Trench III"
+  enchantments:
+  - DIG_SPEED-5
+  - DURABILITY-3
+  lore:
+  - "&3Trench III"
+  - "&7 "
+  - "&7&oThis tool was engineered to trench."
+  - "&7&oHarness and abuse the great power of it..."
+  - "&7 "
+  - "&5&lBLOCKS MINED: &d&l%blocksMined%"
+  - "&7 "
+  - "&7&m---------------------------------"
+  - "&a&lBUY PRICE: &f$3,000,000"
+  - "&7&m---------------------------------"
+  gui-item: diamond_pickaxe
+  gui-slot: 13
+  price: 3000000
+#
+# End configuration for TrenchTool3
+# -------------------------------------------------------------
+
+# -------------------------------------------------------------
+# Start configuration for TrenchTool4
+#
+trench-tool-4:
+  name: "&f&lGIGA DRILL &7(&b9x9&7)"
+  unique: "&3Trench IV"
+  blocks-mined-unique-line-id: "&5&lBLOCKS MINED:"
+  blocks-mined-increment-id: "&d&l%blocksMined%"
+  radius: 4
+  enchantments:
+  - DIG_SPEED-5
+  - DURABILITY-3
+  lore:
+  - "&3Trench IV"
+  - "&7 "
+  - "&7&oThis tool was engineered to trench."
+  - "&7&oHarness and abuse the great power of it..."
+  - "&7 "
+  - "&5&lBLOCKS MINED: &d&l%blocksMined%"
+#
+
+#
+trench-tool-4-gui:
+  enabled: true
+  name: "&f&lGIGA DRILL &7(&b9x9&7)"
+  unique: "&3Trench IV"
+  enchantments:
+  - DIG_SPEED-5
+  - DURABILITY-3
+  lore:
+  - "&3Trench IV"
+  - "&7 "
+  - "&7&oThis tool was engineered to trench."
+  - "&7&oHarness and abuse the great power of it..."
+  - "&7 "
+  - "&5&lBLOCKS MINED: &d&l%blocksMined%"
+  - "&7 "
+  - "&7&m---------------------------------"
+  - "&a&lBUY PRICE: &f$4,000,000"
+  - "&7&m---------------------------------"
+  gui-item: diamond_pickaxe
+  gui-slot: 14
+  price: 4000000
+#
+# End configuration for TrenchTool4
+# -------------------------------------------------------------
+
+# -------------------------------------------------------------
+# Start configuration for TrenchTool5
+#
+trench-tool-5:
+  name: "&f&lGIGA DRILL &7(&b11x11&7)"
+  unique: "&3Trench V"
+  blocks-mined-unique-line-id: "&5&lBLOCKS MINED:"
+  blocks-mined-increment-id: "&d&l%blocksMined%"
+  radius: 5
+  enchantments:
+  - DIG_SPEED-5
+  - DURABILITY-3
+  lore:
+  - "&3Trench V"
+  - "&7 "
+  - "&7&oThis tool was engineered to trench."
+  - "&7&oHarness and abuse the great power of it..."
+  - "&7 "
+  - "&5&lBLOCKS MINED: &d&l%blocksMined%"
+#
+
+#
+trench-tool-5-gui:
+  enabled: true
+  name: "&f&lGIGA DRILL &7(&b11x11&7)"
+  unique: "&3Trench V"
+  enchantments:
+  - DIG_SPEED-5
+  - DURABILITY-3
+  lore:
+  - "&3Trench V"
+  - "&7 "
+  - "&7&oThis tool was engineered to trench."
+  - "&7&oHarness and abuse the great power of it..."
+  - "&7 "
+  - "&5&lBLOCKS MINED: &d&l%blocksMined%"
+  - "&7 "
+  - "&7&m---------------------------------"
+  - "&a&lBUY PRICE: &f$5,000,000"
+  - "&7&m---------------------------------"
+  gui-item: diamond_pickaxe
+  gui-slot: 15
+  price: 5000000
+#
+# End configuration for TrenchTool5
+# -------------------------------------------------------------

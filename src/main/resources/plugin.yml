@@ -1,0 +1,8 @@
+name: TrenchTools
+author: nbdSteve
+version: 3.0
+main: com.nbdSteve.trenchTools.TrenchTools
+commands:
+  trench:
+    usage: /<command>
+    description: Type '/trench help' for command help.
