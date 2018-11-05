@@ -1,4 +1,4 @@
-package com.nbdSteve.trenchTools.support;
+package com.nbdSteve.trenchtools.support;
 
 import com.sk89q.worldguard.bukkit.WGBukkit;
 import com.sk89q.worldguard.protection.ApplicableRegionSet;

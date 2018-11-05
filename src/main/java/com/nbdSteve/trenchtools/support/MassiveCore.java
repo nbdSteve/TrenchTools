@@ -1,4 +1,4 @@
-package com.nbdSteve.trenchTools.support;
+package com.nbdSteve.trenchtools.support;
 
 import com.massivecraft.factions.entity.BoardColl;
 import com.massivecraft.factions.entity.Faction;

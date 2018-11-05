@@ -1,7 +1,7 @@
-package com.nbdSteve.trenchTools.event.gui;
+package com.nbdSteve.trenchtools.event.gui;
 
-import com.nbdSteve.trenchTools.TrenchTools;
-import com.nbdSteve.trenchTools.file.LoadProvidedFiles;
+import com.nbdSteve.trenchtools.TrenchTools;
+import com.nbdSteve.trenchtools.file.LoadProvidedFiles;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;

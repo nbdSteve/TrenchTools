@@ -1,9 +1,9 @@
-package com.nbdSteve.trenchTools;
+package com.nbdSteve.trenchtools;
 
-import com.nbdSteve.trenchTools.command.TrenchCommand;
-import com.nbdSteve.trenchTools.event.BlockBreak;
-import com.nbdSteve.trenchTools.event.gui.GuiClick;
-import com.nbdSteve.trenchTools.file.LoadProvidedFiles;
+import com.nbdSteve.trenchtools.command.TrenchCommand;
+import com.nbdSteve.trenchtools.event.BlockBreak;
+import com.nbdSteve.trenchtools.event.gui.GuiClick;
+import com.nbdSteve.trenchtools.file.LoadProvidedFiles;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.RegisteredServiceProvider;
