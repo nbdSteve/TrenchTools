@@ -7,6 +7,10 @@ import org.bukkit.plugin.Plugin;
 
 import java.util.HashMap;
 
+/**
+ * Class to load a specified file, to create a new file simply add the name of it to the ENUM.
+ * Then add another line to the LoadProvidedFiles method and create a getter for that file.
+ */
 public class LoadProvidedFiles {
     //Register the main class
     private Plugin pl = TrenchTools.getPlugin(TrenchTools.class);

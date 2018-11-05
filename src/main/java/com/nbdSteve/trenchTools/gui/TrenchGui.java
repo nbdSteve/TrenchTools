@@ -15,13 +15,19 @@ import org.bukkit.plugin.Plugin;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Merchant Gui class, this creates and adds the harvester tools to the Merchant Gui.
+ */
 public class TrenchGui {
     //Register the main class
     private Plugin pl = TrenchTools.getPlugin(TrenchTools.class);
     //Register LoadProvideFiles class
     private LoadProvidedFiles lpf = ((TrenchTools) pl).getFiles();
 
-    @SuppressWarnings("deprecation")
+    /**
+     * Method to create the gui whenever the player runs the /harvest command
+     * @param p player, cannot be null
+     */
     public void gui(Player p) {
         // Creating the inventory with the name & size from the config.yml.
         Inventory i = pl.getServer().createInventory(null, lpf.getConfig().getInt("gui.size"),
@@ -39,14 +45,15 @@ public class TrenchGui {
             f1M.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         }
         f1.setItemMeta(f1M);
-
+        //Fill the rest of the GUI with the filler item
         for (int z = 0; z < lpf.getConfig().getInt("gui.size"); z++) {
             i.setItem(z, f1);
         }
-        for (int x = 1; x < 6; x++) {
+        //Add all of the tools to the inventory
+        for (int x = 1; x < 10; x++) {
             String tool = "trench-tool-" + String.valueOf(x) + "-gui";
-
             if (lpf.getTrench().getBoolean(tool + ".enabled")) {
+                //Create the tool
                 ItemStack ttool = new ItemStack(
                         Material.valueOf(lpf.getTrench().getString(tool + ".gui-item").toUpperCase()), 1);
                 ItemMeta ttoolMeta = ttool.getItemMeta();
@@ -63,6 +70,7 @@ public class TrenchGui {
                 }
                 ttoolMeta.setLore(ttoolLore);
                 ttool.setItemMeta(ttoolMeta);
+                //Add it to the gui
                 i.setItem(lpf.getTrench().getInt(tool + ".gui-slot"), ttool);
             } else {
 

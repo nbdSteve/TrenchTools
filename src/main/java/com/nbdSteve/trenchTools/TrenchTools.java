@@ -9,12 +9,18 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
+/**
+ * Core class for the TrenchTools plugin.
+ */
 public class TrenchTools extends JavaPlugin {
     //Economy variable for the plugin
     private static Economy econ;
     //New LoadProvidedFiles instance
     private LoadProvidedFiles lpf;
 
+    /**
+     * Method called when the plugin starts, register all events and commands in this method
+     */
     @Override
     public void onEnable() {
         getLogger().info("Thanks for using TrenchTools - nbdSteve");
@@ -30,15 +36,15 @@ public class TrenchTools extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new BlockBreak(), this);
     }
 
+    /**
+     * Method called when the plugin is disabled
+     */
     @Override
     public void onDisable() {
         getLogger().info("Thanks for using TrenchTools - nbdSteve");
     }
 
-    public LoadProvidedFiles getFiles() {
-        return lpf;
-    }
-
+    //Set up the economy for the plugin
     private boolean setupEconomy() {
         if (Bukkit.getPluginManager().getPlugin("Vault") == null) {
             return false;
@@ -51,6 +57,18 @@ public class TrenchTools extends JavaPlugin {
         return econ != null;
     }
 
+    /**
+     * Get the LoadProvidedFiles instance that has been created
+     * @return LoadProvidedFiles instance
+     */
+    public LoadProvidedFiles getFiles() {
+        return lpf;
+    }
+
+    /**
+     * Get the servers economy
+     * @return econ
+     */
     public static Economy getEconomy() {
         return econ;
     }

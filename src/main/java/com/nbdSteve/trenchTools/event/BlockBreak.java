@@ -19,13 +19,20 @@ import org.bukkit.plugin.Plugin;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Event called when the player breaks a block, most of the code is not executed unless they are using the
+ * tool. The tool check is done first to reduce memory usage.
+ */
 public class BlockBreak implements Listener {
     //Register the main class
     private Plugin pl = TrenchTools.getPlugin(TrenchTools.class);
     //Register LoadProvideFiles class
     private LoadProvidedFiles lpf = ((TrenchTools) pl).getFiles();
 
-    @SuppressWarnings("deprecation")
+    /**
+     * All code for the event is store in this method.
+     * @param e the event, cannot be null.
+     */
     @EventHandler
     public void onBreak(BlockBreakEvent e) {
         //Get the player
@@ -52,6 +59,18 @@ public class BlockBreak implements Listener {
                 } else if (toolLore.contains(
                         ChatColor.translateAlternateColorCodes('&', lpf.getTrench().getString("trench-tool-5.unique")))) {
                     toolType = "trench-tool-5";
+                } else if (toolLore.contains(
+                        ChatColor.translateAlternateColorCodes('&', lpf.getTrench().getString("trench-tool-6.unique")))) {
+                    toolType = "trench-tool-6";
+                } else if (toolLore.contains(
+                        ChatColor.translateAlternateColorCodes('&', lpf.getTrench().getString("trench-tool-7.unique")))) {
+                    toolType = "trench-tool-7";
+                } else if (toolLore.contains(
+                        ChatColor.translateAlternateColorCodes('&', lpf.getTrench().getString("trench-tool-8.unique")))) {
+                    toolType = "trench-tool-8";
+                } else if (toolLore.contains(
+                        ChatColor.translateAlternateColorCodes('&', lpf.getTrench().getString("trench-tool-9.unique")))) {
+                    toolType = "trench-tool-9";
                 } else {
                     return;
                 }

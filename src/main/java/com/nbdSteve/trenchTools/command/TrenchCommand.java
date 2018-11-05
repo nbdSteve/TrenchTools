@@ -18,10 +18,13 @@ import org.bukkit.plugin.Plugin;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class for the /trench command for the plugin
+ */
 public class TrenchCommand implements CommandExecutor {
     //Register the main class
     private Plugin pl = TrenchTools.getPlugin(TrenchTools.class);
-    //Register LoadProvideFiles class
+    //Register LoadProvideFiles instance
     private LoadProvidedFiles lpf = ((TrenchTools) pl).getFiles();
     //Register class so that command will work
     public TrenchCommand(TrenchTools pl) {
