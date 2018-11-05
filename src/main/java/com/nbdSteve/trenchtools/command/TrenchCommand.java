@@ -22,17 +22,17 @@ import java.util.List;
  * Class for the /trench command for the plugin
  */
 public class TrenchCommand implements CommandExecutor {
-    //Register the main class
-    private Plugin pl = TrenchTools.getPlugin(TrenchTools.class);
-    //Register LoadProvideFiles instance
-    private LoadProvidedFiles lpf = ((TrenchTools) pl).getFiles();
     //Register class so that command will work
     public TrenchCommand(TrenchTools pl) {
         this.pl = pl;
     }
 
-    @SuppressWarnings("deprecation")
-    public boolean onCommand(CommandSender s, Command c, String arg1, String[] args) {
+    //Register the main class
+    private Plugin pl = TrenchTools.getPlugin(TrenchTools.class);
+    //Register LoadProvideFiles instance
+    private LoadProvidedFiles lpf = ((TrenchTools) pl).getFiles();
+
+    public boolean onCommand(CommandSender s, Command c, String label, String[] args) {
         if (c.getName().equalsIgnoreCase("trench")) {
             if (args.length == 0) {
                 if (Bukkit.getPluginManager().getPlugin("Vault") != null) {
@@ -185,7 +185,6 @@ public class TrenchCommand implements CommandExecutor {
                                 String[] parts = ench.split("-");
                                 toolMeta.addEnchant(Enchantment.getByName(parts[0]), Integer.parseInt(parts[1]), true);
                             }
-
                             toolMeta.setLore(toolLore);
                             tool.setItemMeta(toolMeta);
                             target.getInventory().addItem(tool);

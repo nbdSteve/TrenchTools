@@ -9,7 +9,7 @@ help:
 - "&7 "
 - "&3/trench give <player> <item> <level> <amount>"
 - "&7Give the target player their item with the &d&otrench&7 enchantment."
-- "&7The player must be online and the level must be between 1-5."
+- "&7The player must be online and the level must be between 1-9."
 - "&7The <item> must be a valid &e&lMINECRAFT&r &7material, e.g. &fdiamond_pickaxe&7."
 - "&7Specify an amount that is 1 or greater, if you put no amount it will not give you an item."
 - "&7Valid item entries are &e&lANY&r &7minecraft item."

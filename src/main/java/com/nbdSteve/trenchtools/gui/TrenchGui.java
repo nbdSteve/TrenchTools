@@ -25,7 +25,8 @@ public class TrenchGui {
     private LoadProvidedFiles lpf = ((TrenchTools) pl).getFiles();
 
     /**
-     * Method to create the gui whenever the player runs the /harvest command
+     * Method to create the gui whenever the player runs the /trench command
+     *
      * @param p player, cannot be null
      */
     public void gui(Player p) {

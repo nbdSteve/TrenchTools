@@ -36,7 +36,7 @@ trench-tool-1:
   - DURABILITY-3
   #
   # Enchantment Lore, you can make this as many lines as you would like.
-  # In v2.1.2 you can put the %blocksMined% placeholder anywhere in the lore (must be after the 'blocks-mined-unique-line-id').
+  # In v3.0 you can put the %blocksMined% placeholder anywhere in the lore (must be after the 'blocks-mined-unique-line-id').
   lore:
   - "&3Trench I"
   - "&7 "
