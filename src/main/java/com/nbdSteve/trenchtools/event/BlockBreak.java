@@ -1,10 +1,10 @@
-package com.nbdSteve.trenchtools.event;
+package com.nbdsteve.trenchtools.event;
 
-import com.nbdSteve.trenchtools.TrenchTools;
-import com.nbdSteve.trenchtools.file.LoadProvidedFiles;
-import com.nbdSteve.trenchtools.support.Factions;
-import com.nbdSteve.trenchtools.support.MassiveCore;
-import com.nbdSteve.trenchtools.support.WorldGuard;
+import com.nbdsteve.trenchtools.TrenchTools;
+import com.nbdsteve.trenchtools.file.LoadProvidedFiles;
+import com.nbdsteve.trenchtools.support.Factions;
+import com.nbdsteve.trenchtools.support.MassiveCore;
+import com.nbdsteve.trenchtools.support.WorldGuard;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;

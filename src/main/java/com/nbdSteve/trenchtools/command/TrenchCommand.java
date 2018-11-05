@@ -1,8 +1,8 @@
-package com.nbdSteve.trenchtools.command;
+package com.nbdsteve.trenchtools.command;
 
-import com.nbdSteve.trenchtools.TrenchTools;
-import com.nbdSteve.trenchtools.file.LoadProvidedFiles;
-import com.nbdSteve.trenchtools.gui.TrenchGui;
+import com.nbdsteve.trenchtools.TrenchTools;
+import com.nbdsteve.trenchtools.file.LoadProvidedFiles;
+import com.nbdsteve.trenchtools.gui.TrenchGui;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -123,7 +123,6 @@ public class TrenchCommand implements CommandExecutor {
                     int x = 0;
                     String item = args[2].toUpperCase();
                     String level = "trench-tool-" + args[3];
-
                     try {
                         target = pl.getServer().getPlayer(args[1]);
                     } catch (Exception e) {
@@ -170,12 +169,11 @@ public class TrenchCommand implements CommandExecutor {
                             }
                         }
                     }
-                    if (size <= 5 && size >= 1) {
+                    if (size <= 9 && size >= 1) {
                         while (x < amount) {
                             ItemStack tool = new ItemStack(Material.valueOf(item));
                             ItemMeta toolMeta = tool.getItemMeta();
-                            List<String> toolLore = new ArrayList<String>();
-
+                            List<String> toolLore = new ArrayList<>();
                             toolMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&',
                                     lpf.getTrench().getString(level + ".name")));
 

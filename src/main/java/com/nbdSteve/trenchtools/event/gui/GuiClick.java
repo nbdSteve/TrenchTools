@@ -1,7 +1,7 @@
-package com.nbdSteve.trenchtools.event.gui;
+package com.nbdsteve.trenchtools.event.gui;
 
-import com.nbdSteve.trenchtools.TrenchTools;
-import com.nbdSteve.trenchtools.file.LoadProvidedFiles;
+import com.nbdsteve.trenchtools.TrenchTools;
+import com.nbdsteve.trenchtools.file.LoadProvidedFiles;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -110,7 +110,7 @@ public class GuiClick implements Listener {
                                 ItemStack item = new ItemStack(
                                         Material.valueOf(lpf.getTrench().getString(toolType + ".gui-item").toUpperCase()));
                                 ItemMeta itemMeta = item.getItemMeta();
-                                List<String> itemLore = new ArrayList<String>();
+                                List<String> itemLore = new ArrayList<>();
                                 itemMeta.setDisplayName(ChatColor.translateAlternateColorCodes('&',
                                         lpf.getTrench().getString(ttool + ".name")));
                                 for (String lore : lpf.getTrench().getStringList(ttool + ".lore")) {

@@ -1,6 +1,6 @@
-package com.nbdSteve.trenchtools.file.providedFile;
+package com.nbdsteve.trenchtools.file.providedfile;
 
-import com.nbdSteve.trenchtools.TrenchTools;
+import com.nbdsteve.trenchtools.TrenchTools;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;

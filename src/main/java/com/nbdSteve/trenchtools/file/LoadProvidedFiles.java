@@ -1,7 +1,7 @@
-package com.nbdSteve.trenchtools.file;
+package com.nbdsteve.trenchtools.file;
 
-import com.nbdSteve.trenchtools.TrenchTools;
-import com.nbdSteve.trenchtools.file.providedFile.GenerateProvidedFile;
+import com.nbdsteve.trenchtools.file.providedfile.GenerateProvidedFile;
+import com.nbdsteve.trenchtools.TrenchTools;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.Plugin;
 
@@ -28,7 +28,7 @@ public class LoadProvidedFiles {
      * Generate all of the files in the enum
      */
     public LoadProvidedFiles() {
-        fileList = new HashMap<Files, GenerateProvidedFile>();
+        fileList = new HashMap<>();
         fileList.put(Files.CONFIG, new GenerateProvidedFile("config.yml"));
         fileList.put(Files.MESSAGES, new GenerateProvidedFile("messages.yml"));
         fileList.put(Files.TRENCH, new GenerateProvidedFile("trench.yml"));

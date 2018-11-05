@@ -1,4 +1,4 @@
-package com.nbdSteve.trenchtools.support;
+package com.nbdsteve.trenchtools.support;
 
 import com.massivecraft.factions.Board;
 import com.massivecraft.factions.FLocation;

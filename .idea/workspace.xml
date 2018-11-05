@@ -1,30 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8bb648e-09cc-4023-82e1-48607af17fdc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchTools/TrenchTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/TrenchTools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchTools/command/TrenchCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/command/TrenchCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchTools/event/BlockBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/event/BlockBreak.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchTools/event/gui/GuiClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/event/gui/GuiClick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchTools/file/LoadProvidedFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/file/LoadProvidedFiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchTools/file/providedFile/GenerateProvidedFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/file/providedFile/GenerateProvidedFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchTools/gui/TrenchGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/gui/TrenchGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchTools/support/Factions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/support/Factions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchTools/support/MassiveCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/support/MassiveCore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchTools/support/WorldGuard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/support/WorldGuard.java" afterDir="false" />
+    <list default="true" id="a35449bc-69f9-4337-896e-b51e5d959ae8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_21_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_md_5_bungeecord_chat_1_13_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_1_13_2_R0_1_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Factions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/spigot_1_13_1_R0_1_SNAPSHOT_b1918.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrenchTools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TrenchTools.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/TrenchTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/TrenchTools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/command/TrenchCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/command/TrenchCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/event/BlockBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/event/BlockBreak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/event/gui/GuiClick.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/file/LoadProvidedFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/file/LoadProvidedFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/gui/TrenchGui.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/support/Factions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/support/Factions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/support/MassiveCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/support/MassiveCore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/support/WorldGuard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/support/WorldGuard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/TrenchTools.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/TrenchTools.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/command/TrenchCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/command/TrenchCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/event/BlockBreak.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/event/BlockBreak.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/event/gui/GuiClick.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/event/gui/GuiClick.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/file/LoadProvidedFiles$Files.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/file/LoadProvidedFiles$Files.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/file/LoadProvidedFiles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/file/LoadProvidedFiles.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/file/providedFile/GenerateProvidedFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/file/providedFile/GenerateProvidedFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/gui/TrenchGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/gui/TrenchGui.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/command/TrenchCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/event/BlockBreak.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/event/gui/GuiClick.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/file/LoadProvidedFiles$Files.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/file/LoadProvidedFiles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/file/providedFile/GenerateProvidedFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/gui/TrenchGui.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/support/Factions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/support/Factions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/support/MassiveCore.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/support/MassiveCore.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/support/WorldGuard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/support/WorldGuard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,136 +56,115 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="-512901767">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="7" />
-          <entry key="project.open.time.1" value="3" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="8" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="3606" />
-          <entry key="xml" value="300" />
-          <entry key="yml" value="13" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="3606" />
-          <entry key="XML" value="300" />
-          <entry key="YAML" value="13" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="13" />
-          <entry key="xml" value="1" />
-          <entry key="yml" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="13" />
-          <entry key="XML" value="1" />
-          <entry key="YAML" value="5" />
-        </counts>
-      </usages-collector>
-    </session>
     <session id="1487996148">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="22" />
-          <entry key="xml" value="1" />
-          <entry key="yml" value="6" />
+          <entry key="java" value="12" />
+          <entry key="xml" value="2" />
+          <entry key="yml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="22" />
-          <entry key="XML" value="1" />
-          <entry key="YAML" value="6" />
+          <entry key="JAVA" value="12" />
+          <entry key="XML" value="2" />
+          <entry key="YAML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="110" />
-          <entry key="yml" value="120" />
+          <entry key="java" value="10" />
+          <entry key="yml" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="110" />
-          <entry key="YAML" value="120" />
+          <entry key="JAVA" value="10" />
+          <entry key="YAML" value="26" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/TrenchTools.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="640">
+              <caret line="34" column="63" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/support/WorldGuard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/support/MassiveCore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            <state relative-caret-position="20">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/gui/TrenchGui.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/command/TrenchCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="80" column="1" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
-              <folding>
-                <element signature="e#2641#2649#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/support/Factions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/TrenchTools.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+            <state relative-caret-position="380">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1307#1308#0" expanded="true" />
-                <element signature="e#1382#1383#0" expanded="true" />
+                <element signature="e#1077#1109#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/command/TrenchCommand.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/file/LoadProvidedFiles.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+            <state relative-caret-position="35">
+              <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/file/providedfile/GenerateProvidedFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-465">
+              <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -173,10 +173,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/support/MassiveCore.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/event/BlockBreak.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+            <state relative-caret-position="1520">
+              <caret line="87" column="28" lean-forward="true" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -185,10 +185,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/trench.yml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/event/gui/GuiClick.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9060">
-              <caret line="453" column="37" selection-start-line="453" selection-start-column="37" selection-end-line="453" selection-end-column="37" />
+            <state relative-caret-position="245">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/gui/TrenchGui.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -202,47 +217,36 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>sender</find>
-      <find>cmd</find>
-      <find>else pl</find>
-      <find>getMessages</find>
-      <find>getConf</find>
-      <find>plugin</find>
-      <find>pl.getConfig</find>
-      <find>getTrench</find>
-      <find>Harvester</find>
-      <find>harvester</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/messages.yml" />
-        <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
-        <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchTools/file/providedFile/GenerateProvidedFile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchTools/file/LoadProvidedFiles.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchTools/event/gui/GuiClick.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchTools/event/BlockBreak.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchTools/gui/TrenchGui.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchTools/support/Factions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchTools/support/MassiveCore.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchTools/support/WorldGuard.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchTools/TrenchTools.java" />
+        <option value="$PROJECT_DIR$/src/main/java/comd/nbdsteve/trenchtools/support/Factions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/comd/nbdsteve/trenchtools/support/WorldGuard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/comd/nbdsteve/trenchtools/support/MassiveCore.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
+        <option value="$PROJECT_DIR$/src/main/resources/messages.yml" />
         <option value="$PROJECT_DIR$/src/main/resources/trench.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchTools/command/TrenchCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/file/providedFile/GenerateProvidedFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/event/BlockBreak.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/event/gui/GuiClick.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/gui/TrenchGui.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/TrenchTools.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/command/TrenchCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/file/providedfile/GenerateProvidedFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/file/LoadProvidedFiles.java" />
       </list>
     </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
@@ -274,7 +278,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -315,14 +318,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="trenchtools" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TrenchTools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrenchTools" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="file" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TrenchTools" type="b2602c69:ProjectViewProjectNode" />
@@ -335,21 +331,16 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541214078931" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HarvesterTools" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541395050933" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\deeb0\Desktop\minecraft\Intellj Plugins\trench-tools\src\main" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -363,178 +354,212 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="TrenchTools build" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="package" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b8bb648e-09cc-4023-82e1-48607af17fdc" name="Default Changelist" comment="" />
-      <created>1537769165318</created>
+      <changelist id="a35449bc-69f9-4337-896e-b51e5d959ae8" name="Default Changelist" comment="" />
+      <created>1541393768829</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1537769165318</updated>
+      <updated>1541393768829</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1705757" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17750533" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.15075922" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Maven Projects" visible="true" weight="0.13326226" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.15191898" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/support/Factions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="34" selection-end-column="25" />
+        <state relative-caret-position="500">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/support/WorldGuard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/support/MassiveCore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1220">
-          <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+        <state relative-caret-position="121">
+          <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/messages.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/file/providedFile/GenerateProvidedFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1160">
-          <caret line="58" column="7" lean-forward="true" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/file/LoadProvidedFiles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/event/gui/GuiClick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2914">
-          <caret line="159" column="9" lean-forward="true" selection-start-line="159" selection-start-column="9" selection-end-line="159" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/event/BlockBreak.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1760">
-          <caret line="72" column="45" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/gui/TrenchGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="80" column="1" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
-          <folding>
-            <element signature="e#2641#2649#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/support/Factions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/support/WorldGuard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/support/MassiveCore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/TrenchTools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1307#1308#0" expanded="true" />
-            <element signature="e#1382#1383#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/command/TrenchCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="834">
+          <caret line="131" column="1" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/trench.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9060">
-          <caret line="453" column="37" selection-start-line="453" selection-start-column="37" selection-end-line="453" selection-end-column="37" />
+        <state relative-caret-position="834">
+          <caret line="454" column="63" selection-start-line="454" selection-start-column="63" selection-end-line="454" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        <state relative-caret-position="20">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/event/BlockBreak.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1520">
+          <caret line="87" column="28" lean-forward="true" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/event/gui/GuiClick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/gui/TrenchGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/TrenchTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="34" column="63" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/command/TrenchCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1077#1109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/file/providedfile/GenerateProvidedFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-465">
+          <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/file/LoadProvidedFiles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -601,9 +626,21 @@
           </splitter-proportions>
         </settings>
       </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>spigot-1.13.1-R0.1-SNAPSHOT-b1918</last-edited>
+          <last-edited>Maven: com.google.code.gson:gson:2.8.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

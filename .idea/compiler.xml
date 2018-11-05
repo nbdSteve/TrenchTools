@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="trench-tools" />
         <module name="TrenchTools" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="TrenchTools" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
