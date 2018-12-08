@@ -48,7 +48,7 @@ trench-tool-1:
 
 #
 # The following configuration is for the item displayed in the GUI menu.
-# This item will not be given to the player, the TrenchTool1 item will be given.
+# This item will not be given to the player, the trench-tool-1 item will be given.
 trench-tool-1-gui:
   # If this item will be in the GUI.
   enabled: true

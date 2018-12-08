@@ -26,11 +26,11 @@ import java.util.List;
 public class BlockBreak implements Listener {
     //Register the main class
     private Plugin pl = TrenchTools.getPlugin(TrenchTools.class);
-    //Register LoadProvideFiles class
+    //Register LoadProvidedFiles class
     private LoadProvidedFiles lpf = ((TrenchTools) pl).getFiles();
 
     /**
-     * All code for the event is store in this method.
+     * All code for the event is stored in this method.
      *
      * @param e the event, cannot be null.
      */
