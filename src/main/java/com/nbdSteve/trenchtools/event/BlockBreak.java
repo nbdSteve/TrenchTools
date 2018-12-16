@@ -8,6 +8,8 @@ import com.nbdsteve.trenchtools.support.WorldGuard;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import org.bukkit.WorldBorder;
+import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -126,6 +128,8 @@ public class BlockBreak implements Listener {
                             } else if (blocks.contains(current)) {
                                 e.setCancelled(true);
                                 x++;
+                            } else if (isInsideBorder(e.getBlock().getRelative(x, y, z), e)) {
+                                x++;
                             } else if (lpf.getConfig().getBoolean("enable-natural-drops")) {
                                 //Don't run this if the block is air, don't increment the block count for air
                                 if (!e.getBlock().getRelative(x, y, z).getType().equals(Material.AIR)) {
@@ -208,7 +212,70 @@ public class BlockBreak implements Listener {
                     z = -(lpf.getTrench().getInt(toolType + ".radius"));
                     y++;
                 }
+                if (lpf.getConfig().getBoolean("enable-auto-group")) {
+                    //Grouping for diamond
+                    if (p.getInventory().contains(Material.DIAMOND)) {
+                        int amount = 0;
+                        for (ItemStack item : p.getInventory().all(Material.DIAMOND).values()) {
+                            amount += item.getAmount();
+                        }
+                        for (int i = 9; i < amount; amount -= 9) {
+                            p.getInventory().removeItem(new ItemStack(Material.DIAMOND, 9));
+                            p.getInventory().addItem(new ItemStack(Material.DIAMOND_BLOCK, 1));
+                        }
+                    }
+                    //Grouping for redstone
+                    if (p.getInventory().contains(Material.REDSTONE)) {
+                        int amount = 0;
+                        for (ItemStack item : p.getInventory().all(Material.REDSTONE).values()) {
+                            amount += item.getAmount();
+                        }
+                        for (int i = 9; i < amount; amount -= 9) {
+                            p.getInventory().removeItem(new ItemStack(Material.REDSTONE, 9));
+                            p.getInventory().addItem(new ItemStack(Material.REDSTONE_BLOCK, 1));
+                        }
+                    }
+                    //Grouping for coal
+                    if (p.getInventory().contains(Material.COAL)) {
+                        int amount = 0;
+                        for (ItemStack item : p.getInventory().all(Material.COAL).values()) {
+                            amount += item.getAmount();
+                        }
+                        for (int i = 9; i < amount; amount -= 9) {
+                            p.getInventory().removeItem(new ItemStack(Material.COAL, 9));
+                            p.getInventory().addItem(new ItemStack(Material.COAL_BLOCK, 1));
+                        }
+                    }
+                }
             }
         }
+    }
+
+    /**
+     * Method to check if a block is inside the world border or not
+     *
+     * @param b the block being checked
+     * @param e the event it is in
+     * @return boolean, true if the block is inside the border
+     */
+    private boolean isInsideBorder(Block b, BlockBreakEvent e) {
+        //Get the worldborder
+        WorldBorder wb = e.getBlock().getLocation().getWorld().getWorldBorder();
+        //Store the blocks location
+        int blockX = b.getX();
+        int blockZ = b.getZ();
+        //Get the actual worldborder size
+        double size = wb.getSize() / 2;
+        //Check if the block is inside, return true if it is
+        if (blockX > 0 && blockX > size - 1) {
+            return true;
+        } else if (blockX < 0 && blockX < (size * -1)) {
+            return true;
+        } else if (blockZ > 0 && blockZ > size - 1) {
+            return true;
+        } else if (blockZ < 0 && blockZ < (size * -1)) {
+            return true;
+        }
+        return false;
     }
 }

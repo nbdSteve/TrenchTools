@@ -142,7 +142,7 @@ public class TrenchCommand implements CommandExecutor {
                                 s.sendMessage(ChatColor.translateAlternateColorCodes('&', line));
                             }
                         } else {
-                            pl.getLogger().info("The level of trench you entered is invalid, enter a int between 1-5.");
+                            pl.getLogger().info("The level of trench you entered is invalid, enter a int between 1-9.");
                         }
                     }
                     try {

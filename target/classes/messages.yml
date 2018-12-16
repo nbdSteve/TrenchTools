@@ -107,7 +107,7 @@ invalid-amount:
 invalid-level:
 - "&7 "
 - "&f&lTrenchTools:"
-- "&c&lERROR!&7 The enchantment size you entered is &b&lINVALID&7, make sure the enchantment size is between 1 - 5."
+- "&c&lERROR!&7 The enchantment size you entered is &b&lINVALID&7, make sure the enchantment size is between 1 - 9."
 - "&7 "
 #
 

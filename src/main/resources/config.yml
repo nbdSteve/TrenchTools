@@ -15,6 +15,10 @@ enable-natural-drops: false
 # The list of blocks can be edited in the trench.yml file.
 enable-block-blacklist: true
 #
+# If this feature is enabled the plugin will auto block:
+# diamond, coal and redstone
+enable-auto-group: true
+#
 # These are values for the GUI that will be opened with the /trench command.
 gui:
   #
