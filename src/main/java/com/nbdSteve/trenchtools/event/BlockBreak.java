@@ -45,37 +45,18 @@ public class BlockBreak implements Listener {
             if (p.getInventory().getItemInHand().getItemMeta().hasLore()) {
                 ItemMeta toolMeta = p.getInventory().getItemInHand().getItemMeta();
                 List<String> toolLore = toolMeta.getLore();
-                String toolType;
+                String toolType = null;
                 //Get the level of trench from the tool lore
-                if (toolLore.contains(
-                        ChatColor.translateAlternateColorCodes('&', lpf.getTrench().getString("trench-tool-1.unique")))) {
-                    toolType = "trench-tool-1";
-                } else if (toolLore.contains(
-                        ChatColor.translateAlternateColorCodes('&', lpf.getTrench().getString("trench-tool-2.unique")))) {
-                    toolType = "trench-tool-2";
-                } else if (toolLore.contains(
-                        ChatColor.translateAlternateColorCodes('&', lpf.getTrench().getString("trench-tool-3.unique")))) {
-                    toolType = "trench-tool-3";
-                } else if (toolLore.contains(
-                        ChatColor.translateAlternateColorCodes('&', lpf.getTrench().getString("trench-tool-4.unique")))) {
-                    toolType = "trench-tool-4";
-                } else if (toolLore.contains(
-                        ChatColor.translateAlternateColorCodes('&', lpf.getTrench().getString("trench-tool-5.unique")))) {
-                    toolType = "trench-tool-5";
-                } else if (toolLore.contains(
-                        ChatColor.translateAlternateColorCodes('&', lpf.getTrench().getString("trench-tool-6.unique")))) {
-                    toolType = "trench-tool-6";
-                } else if (toolLore.contains(
-                        ChatColor.translateAlternateColorCodes('&', lpf.getTrench().getString("trench-tool-7.unique")))) {
-                    toolType = "trench-tool-7";
-                } else if (toolLore.contains(
-                        ChatColor.translateAlternateColorCodes('&', lpf.getTrench().getString("trench-tool-8.unique")))) {
-                    toolType = "trench-tool-8";
-                } else if (toolLore.contains(
-                        ChatColor.translateAlternateColorCodes('&', lpf.getTrench().getString("trench-tool-9.unique")))) {
-                    toolType = "trench-tool-9";
-                } else {
-                    return;
+                for (int i = 1; i < 10; i++) {
+                    String tool = "trench-tool-" + String.valueOf(i);
+                    try {
+                        lpf.getTrench().getString(tool + ".unique");
+                        if (toolLore.contains(ChatColor.translateAlternateColorCodes('&', lpf.getTrench().getString(tool + ".unique")))) {
+                            toolType = tool;
+                        }
+                    } catch (Exception ex) {
+                        //Do nothing, this tool isn't active or doesn't exist
+                    }
                 }
                 boolean wg = false;
                 boolean fac = false;
@@ -213,39 +194,7 @@ public class BlockBreak implements Listener {
                     y++;
                 }
                 if (lpf.getConfig().getBoolean("enable-auto-group")) {
-                    //Grouping for diamond
-                    if (p.getInventory().contains(Material.DIAMOND)) {
-                        int amount = 0;
-                        for (ItemStack item : p.getInventory().all(Material.DIAMOND).values()) {
-                            amount += item.getAmount();
-                        }
-                        for (int i = 9; i < amount; amount -= 9) {
-                            p.getInventory().removeItem(new ItemStack(Material.DIAMOND, 9));
-                            p.getInventory().addItem(new ItemStack(Material.DIAMOND_BLOCK, 1));
-                        }
-                    }
-                    //Grouping for redstone
-                    if (p.getInventory().contains(Material.REDSTONE)) {
-                        int amount = 0;
-                        for (ItemStack item : p.getInventory().all(Material.REDSTONE).values()) {
-                            amount += item.getAmount();
-                        }
-                        for (int i = 9; i < amount; amount -= 9) {
-                            p.getInventory().removeItem(new ItemStack(Material.REDSTONE, 9));
-                            p.getInventory().addItem(new ItemStack(Material.REDSTONE_BLOCK, 1));
-                        }
-                    }
-                    //Grouping for coal
-                    if (p.getInventory().contains(Material.COAL)) {
-                        int amount = 0;
-                        for (ItemStack item : p.getInventory().all(Material.COAL).values()) {
-                            amount += item.getAmount();
-                        }
-                        for (int i = 9; i < amount; amount -= 9) {
-                            p.getInventory().removeItem(new ItemStack(Material.COAL, 9));
-                            p.getInventory().addItem(new ItemStack(Material.COAL_BLOCK, 1));
-                        }
-                    }
+                    autoBlock(p);
                 }
             }
         }
@@ -277,5 +226,46 @@ public class BlockBreak implements Listener {
             return true;
         }
         return false;
+    }
+
+    /**
+     * Void method to group gems into blocks if the player is mining them
+     *
+     * @param p the player who is mining
+     */
+    private void autoBlock(Player p) {
+        //Grouping for diamond
+        if (p.getInventory().contains(Material.DIAMOND)) {
+            int amount = 0;
+            for (ItemStack item : p.getInventory().all(Material.DIAMOND).values()) {
+                amount += item.getAmount();
+            }
+            for (int i = 9; i < amount; amount -= 9) {
+                p.getInventory().removeItem(new ItemStack(Material.DIAMOND, 9));
+                p.getInventory().addItem(new ItemStack(Material.DIAMOND_BLOCK, 1));
+            }
+        }
+        //Grouping for redstone
+        if (p.getInventory().contains(Material.REDSTONE)) {
+            int amount = 0;
+            for (ItemStack item : p.getInventory().all(Material.REDSTONE).values()) {
+                amount += item.getAmount();
+            }
+            for (int i = 9; i < amount; amount -= 9) {
+                p.getInventory().removeItem(new ItemStack(Material.REDSTONE, 9));
+                p.getInventory().addItem(new ItemStack(Material.REDSTONE_BLOCK, 1));
+            }
+        }
+        //Grouping for coal
+        if (p.getInventory().contains(Material.COAL)) {
+            int amount = 0;
+            for (ItemStack item : p.getInventory().all(Material.COAL).values()) {
+                amount += item.getAmount();
+            }
+            for (int i = 9; i < amount; amount -= 9) {
+                p.getInventory().removeItem(new ItemStack(Material.COAL, 9));
+                p.getInventory().addItem(new ItemStack(Material.COAL_BLOCK, 1));
+            }
+        }
     }
 }
