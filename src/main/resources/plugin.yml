@@ -1,7 +1,7 @@
 name: TrenchTools
 author: nbdSteve
 version: ${project.version}
-main: com.nbdsteve.trenchtools.TrenchTools
+main: com.nbdSteve.trenchtools.TrenchTools
 commands:
   trench:
     usage: /<command>

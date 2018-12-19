@@ -1,8 +1,8 @@
-package com.nbdsteve.trenchtools.command;
+package com.nbdSteve.trenchtools.command;
 
-import com.nbdsteve.trenchtools.TrenchTools;
-import com.nbdsteve.trenchtools.file.LoadProvidedFiles;
-import com.nbdsteve.trenchtools.gui.TrenchGui;
+import com.nbdSteve.trenchtools.TrenchTools;
+import com.nbdSteve.trenchtools.file.LoadProvidedFiles;
+import com.nbdSteve.trenchtools.gui.TrenchGui;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;

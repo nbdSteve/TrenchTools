@@ -1,10 +1,11 @@
-package com.nbdsteve.trenchtools.event;
+package com.nbdSteve.trenchtools.event;
 
-import com.nbdsteve.trenchtools.TrenchTools;
-import com.nbdsteve.trenchtools.file.LoadProvidedFiles;
-import com.nbdsteve.trenchtools.support.Factions;
-import com.nbdsteve.trenchtools.support.MassiveCore;
-import com.nbdsteve.trenchtools.support.WorldGuard;
+import com.nbdSteve.trenchtools.methods.AutoBlock;
+import com.nbdSteve.trenchtools.TrenchTools;
+import com.nbdSteve.trenchtools.file.LoadProvidedFiles;
+import com.nbdSteve.trenchtools.support.Factions;
+import com.nbdSteve.trenchtools.support.MassiveCore;
+import com.nbdSteve.trenchtools.support.WorldGuard;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -57,6 +58,9 @@ public class BlockBreak implements Listener {
                     } catch (Exception ex) {
                         //Do nothing, this tool isn't active or doesn't exist
                     }
+                }
+                if (toolType == null) {
+                    return;
                 }
                 boolean wg = false;
                 boolean fac = false;
@@ -194,7 +198,7 @@ public class BlockBreak implements Listener {
                     y++;
                 }
                 if (lpf.getConfig().getBoolean("enable-auto-group")) {
-                    autoBlock(p);
+                    new AutoBlock(p);
                 }
             }
         }
@@ -226,46 +230,5 @@ public class BlockBreak implements Listener {
             return true;
         }
         return false;
-    }
-
-    /**
-     * Void method to group gems into blocks if the player is mining them
-     *
-     * @param p the player who is mining
-     */
-    private void autoBlock(Player p) {
-        //Grouping for diamond
-        if (p.getInventory().contains(Material.DIAMOND)) {
-            int amount = 0;
-            for (ItemStack item : p.getInventory().all(Material.DIAMOND).values()) {
-                amount += item.getAmount();
-            }
-            for (int i = 9; i < amount; amount -= 9) {
-                p.getInventory().removeItem(new ItemStack(Material.DIAMOND, 9));
-                p.getInventory().addItem(new ItemStack(Material.DIAMOND_BLOCK, 1));
-            }
-        }
-        //Grouping for redstone
-        if (p.getInventory().contains(Material.REDSTONE)) {
-            int amount = 0;
-            for (ItemStack item : p.getInventory().all(Material.REDSTONE).values()) {
-                amount += item.getAmount();
-            }
-            for (int i = 9; i < amount; amount -= 9) {
-                p.getInventory().removeItem(new ItemStack(Material.REDSTONE, 9));
-                p.getInventory().addItem(new ItemStack(Material.REDSTONE_BLOCK, 1));
-            }
-        }
-        //Grouping for coal
-        if (p.getInventory().contains(Material.COAL)) {
-            int amount = 0;
-            for (ItemStack item : p.getInventory().all(Material.COAL).values()) {
-                amount += item.getAmount();
-            }
-            for (int i = 9; i < amount; amount -= 9) {
-                p.getInventory().removeItem(new ItemStack(Material.COAL, 9));
-                p.getInventory().addItem(new ItemStack(Material.COAL_BLOCK, 1));
-            }
-        }
     }
 }

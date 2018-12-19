@@ -1,7 +1,7 @@
-package com.nbdsteve.trenchtools.file;
+package com.nbdSteve.trenchtools.file;
 
-import com.nbdsteve.trenchtools.file.providedfile.GenerateProvidedFile;
-import com.nbdsteve.trenchtools.TrenchTools;
+import com.nbdSteve.trenchtools.file.providedFile.GenerateProvidedFile;
+import com.nbdSteve.trenchtools.TrenchTools;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.Plugin;
 
