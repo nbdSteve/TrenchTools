@@ -1,5 +1,6 @@
 com\nbdSteve\trenchtools\file\LoadProvidedFiles.class
 com\nbdSteve\trenchtools\gui\TrenchGui.class
+com\nbdSteve\trenchtools\support\CoreProtect.class
 com\nbdSteve\trenchtools\support\WorldGuard.class
 com\nbdSteve\trenchtools\event\BlockBreak.class
 com\nbdSteve\trenchtools\TrenchTools.class
