@@ -69,7 +69,8 @@ public class BlockBreak implements Listener {
                 //Figure out which plugins are being used and what to support
                 if (Bukkit.getPluginManager().getPlugin("WorldGuard") != null) {
                     wg = true;
-                    if (!WorldGuard.allowsBreak(e.getBlock().getLocation())) {
+                    if (!WorldGuard.allowsBreak(e.getBlock().getX(), e.getBlock().getY(),
+                            e.getBlock().getZ(), p)) {
                         e.setCancelled(true);
                         return;
                     }
@@ -116,7 +117,8 @@ public class BlockBreak implements Listener {
                             }
                             String current = e.getBlock().getRelative(x, y, z).getType().toString();
                             //Check the world to see if the block is protected and shouldn't be broken
-                            if (wg && !WorldGuard.allowsBreak(e.getBlock().getRelative(x, y, z).getLocation())) {
+                            Block b = e.getBlock().getRelative(x, y, z);
+                            if (wg && !WorldGuard.allowsBreak(b.getX(), b.getY(), b.getZ(), p)) {
                                 x++;
                             } else if (fac && !Factions.canBreakBlock(p, e.getBlock().getRelative(x, y, z))) {
                                 x++;

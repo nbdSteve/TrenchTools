@@ -2,45 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a35449bc-69f9-4337-896e-b51e5d959ae8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/trench/TrenchTools.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/trench/command/TrenchCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/trench/event/BlockBreak.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/trench/event/gui/GuiClick.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/trench/file/LoadProvidedFiles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/trench/file/providedfile/GenerateProvidedFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/trench/gui/TrenchGui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/trench/methods/AutoBlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/trench/support/CoreProtect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/trench/support/Factions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/trench/support/MassiveCore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/trench/support/WorldGuard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_md_5_bungeecord_chat_1_13_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_md_5_bungeecord_chat_1_13_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_1_13_2_R0_1_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_1_13_2_R0_1_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sk89q_commandbook_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sk89q_dummypermscompat_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sk89q_intake_intake_4_2_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sk89q_jchronic_0_2_4a.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sk89q_lib_jlibnoise_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sk89q_squirrelid_0_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sk89q_worldedit_worldedit_bukkit_7_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sk89q_worldedit_worldedit_core_7_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sk89q_worldguard_worldguard_core_7_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sk89q_worldguard_worldguard_legacy_7_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_schlichtherle_truezip_6_8_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_papermc_paperlib_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_opencsv_opencsv_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bstats_bstats_bukkit_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bukkit_bukkit_1_13_2_R0_1_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_flywaydb_flyway_core_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_khelekore_prtree_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_jdk14_1_7_26.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__rhino_js_1_7R2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TrenchTools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TrenchTools.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/TrenchTools.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/command/TrenchCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/event/BlockBreak.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/event/gui/GuiClick.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/file/LoadProvidedFiles.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/file/providedFile/GenerateProvidedFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/gui/TrenchGui.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/methods/AutoBlock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/support/CoreProtect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/support/Factions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/support/MassiveCore.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbdSteve/trenchtools/support/WorldGuard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/trench.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/trench.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/event/BlockBreak.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/event/BlockBreak.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/support/CoreProtect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nbdSteve/trenchTools/support/CoreProtect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/trench/event/BlockBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/trench/event/BlockBreak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/trench/support/WorldGuard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/trench/support/WorldGuard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/lib/spigot-1.13.1-R0.1-SNAPSHOT-b1918.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/lib/spigot-api-1.13.1-R0.1-SNAPSHOT-shaded-b1918.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/lib/worldedit-bukkit-6.1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/lib/worldguard-bukkit-6.2.2.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -81,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/trench/support/WorldGuard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="456">
+              <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -90,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/trench/event/BlockBreak.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            <state relative-caret-position="-3539">
+              <caret line="72" column="52" selection-start-line="72" selection-start-column="52" selection-end-line="72" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -166,11 +158,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/nbdsteve/trenchtools/event/gui/GuiClick.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/support/WorldGuard.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/event/BlockBreak.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/trench/event/BlockBreak.java" />
         <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
         <option value="$PROJECT_DIR$/src/main/resources/messages.yml" />
         <option value="$PROJECT_DIR$/src/main/resources/trench.yml" />
         <option value="$PROJECT_DIR$/src/main/resources/config.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/trench/support/WorldGuard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/trench/event/BlockBreak.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
@@ -269,6 +262,15 @@
               <item name="TrenchTools" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="trench" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TrenchTools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrenchTools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -353,7 +355,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.1495327" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1495327" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -456,23 +458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/trench/support/WorldGuard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/trench/event/BlockBreak.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/trench.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -501,10 +486,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/trench/support/WorldGuard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/trench/event/BlockBreak.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3539">
+          <caret line="72" column="52" selection-start-line="72" selection-start-column="52" selection-end-line="72" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
         </state>
       </provider>
     </entry>
