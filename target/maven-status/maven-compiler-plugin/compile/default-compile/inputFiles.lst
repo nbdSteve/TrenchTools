@@ -1,12 +1,12 @@
-C:\Users\sgood\OneDrive\Documents\Java\Plugins\TrenchTools\src\main\java\com\nbdSteve\trenchtools\gui\TrenchGui.java
-C:\Users\sgood\OneDrive\Documents\Java\Plugins\TrenchTools\src\main\java\com\nbdSteve\trenchtools\command\TrenchCommand.java
-C:\Users\sgood\OneDrive\Documents\Java\Plugins\TrenchTools\src\main\java\com\nbdSteve\trenchtools\methods\AutoBlock.java
-C:\Users\sgood\OneDrive\Documents\Java\Plugins\TrenchTools\src\main\java\com\nbdSteve\trenchtools\support\Factions.java
-C:\Users\sgood\OneDrive\Documents\Java\Plugins\TrenchTools\src\main\java\com\nbdSteve\trenchtools\support\MassiveCore.java
-C:\Users\sgood\OneDrive\Documents\Java\Plugins\TrenchTools\src\main\java\com\nbdSteve\trenchtools\file\LoadProvidedFiles.java
-C:\Users\sgood\OneDrive\Documents\Java\Plugins\TrenchTools\src\main\java\com\nbdSteve\trenchtools\file\providedFile\GenerateProvidedFile.java
-C:\Users\sgood\OneDrive\Documents\Java\Plugins\TrenchTools\src\main\java\com\nbdSteve\trenchtools\event\BlockBreak.java
-C:\Users\sgood\OneDrive\Documents\Java\Plugins\TrenchTools\src\main\java\com\nbdSteve\trenchtools\TrenchTools.java
-C:\Users\sgood\OneDrive\Documents\Java\Plugins\TrenchTools\src\main\java\com\nbdSteve\trenchtools\event\gui\GuiClick.java
-C:\Users\sgood\OneDrive\Documents\Java\Plugins\TrenchTools\src\main\java\com\nbdSteve\trenchtools\support\CoreProtect.java
-C:\Users\sgood\OneDrive\Documents\Java\Plugins\TrenchTools\src\main\java\com\nbdSteve\trenchtools\support\WorldGuard.java
+C:\Users\deeb0\Desktop\minecraft\Intellj Plugins\TrenchTools\src\main\java\com\nbdsteve\trenchtools\gui\TrenchGui.java
+C:\Users\deeb0\Desktop\minecraft\Intellj Plugins\TrenchTools\src\main\java\com\nbdsteve\trenchtools\support\WorldGuard.java
+C:\Users\deeb0\Desktop\minecraft\Intellj Plugins\TrenchTools\src\main\java\com\nbdsteve\trenchtools\file\providedfile\GenerateProvidedFile.java
+C:\Users\deeb0\Desktop\minecraft\Intellj Plugins\TrenchTools\src\main\java\com\nbdsteve\trenchtools\methods\AutoBlock.java
+C:\Users\deeb0\Desktop\minecraft\Intellj Plugins\TrenchTools\src\main\java\com\nbdsteve\trenchtools\support\Factions.java
+C:\Users\deeb0\Desktop\minecraft\Intellj Plugins\TrenchTools\src\main\java\com\nbdsteve\trenchtools\TrenchTools.java
+C:\Users\deeb0\Desktop\minecraft\Intellj Plugins\TrenchTools\src\main\java\com\nbdsteve\trenchtools\event\gui\GuiClick.java
+C:\Users\deeb0\Desktop\minecraft\Intellj Plugins\TrenchTools\src\main\java\com\nbdsteve\trenchtools\support\MassiveCore.java
+C:\Users\deeb0\Desktop\minecraft\Intellj Plugins\TrenchTools\src\main\java\com\nbdsteve\trenchtools\event\BlockBreak.java
+C:\Users\deeb0\Desktop\minecraft\Intellj Plugins\TrenchTools\src\main\java\com\nbdsteve\trenchtools\support\CoreProtect.java
+C:\Users\deeb0\Desktop\minecraft\Intellj Plugins\TrenchTools\src\main\java\com\nbdsteve\trenchtools\command\TrenchCommand.java
+C:\Users\deeb0\Desktop\minecraft\Intellj Plugins\TrenchTools\src\main\java\com\nbdsteve\trenchtools\file\LoadProvidedFiles.java
