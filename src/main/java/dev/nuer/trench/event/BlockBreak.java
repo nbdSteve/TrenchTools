@@ -3,19 +3,16 @@ package dev.nuer.trench.event;
 import dev.nuer.trench.TrenchTools;
 import dev.nuer.trench.file.LoadProvidedFiles;
 import dev.nuer.trench.methods.AutoBlock;
-import dev.nuer.trench.support.CoreProtect;
-import dev.nuer.trench.support.Factions;
-import dev.nuer.trench.support.MassiveCore;
-import dev.nuer.trench.support.WorldGuard;
+import dev.nuer.trench.methods.BlockWorldBorderCheck;
+import dev.nuer.trench.methods.UpdateMinedBlocks;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import org.bukkit.WorldBorder;
-import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
+import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.Plugin;
@@ -40,6 +37,9 @@ public class BlockBreak implements Listener {
      */
     @EventHandler
     public void onBreak(BlockBreakEvent e) {
+        if (e.isCancelled()) {
+            return;
+        }
         //Get the player
         Player p = e.getPlayer();
         //Check that the player has the trenchtool in their hand
@@ -50,46 +50,13 @@ public class BlockBreak implements Listener {
                 String toolType = null;
                 //Get the level of trench from the tool lore
                 for (int i = 1; i < 10; i++) {
-                    String tool = "trench-tool-" + String.valueOf(i);
+                    String tool = "trench-tool-" + i;
                     try {
                         lpf.getTrench().getString(tool + ".unique");
                         if (toolLore.contains(ChatColor.translateAlternateColorCodes('&', lpf.getTrench().getString(tool + ".unique")))) {
                             toolType = tool;
                         }
                     } catch (Exception ex) {
-                        //Do nothing, this tool isn't active or doesn't exist
-                    }
-                }
-                if (toolType == null) {
-                    return;
-                }
-                boolean wg = false;
-                boolean fac = false;
-                boolean cp = false;
-                //Figure out which plugins are being used and what to support
-                if (Bukkit.getPluginManager().getPlugin("WorldGuard") != null) {
-                    wg = true;
-                    if (!WorldGuard.allowsBreak(e.getBlock().getX(), e.getBlock().getY(),
-                            e.getBlock().getZ(), p)) {
-                        e.setCancelled(true);
-                        return;
-                    }
-                }
-                if (Bukkit.getPluginManager().getPlugin("CoreProtect") != null) {
-                    cp = true;
-                    CoreProtect.registerBreak(p.getName(), e.getBlock());
-                }
-                if (Bukkit.getPluginManager().getPlugin("MassiveCore") != null) {
-                    MassiveCore.canBreakBlock(p, e.getBlock());
-                    fac = true;
-                    if (!MassiveCore.canBreakBlock(p, e.getBlock())) {
-                        e.setCancelled(true);
-                        return;
-                    }
-                } else if (Bukkit.getServer().getPluginManager().getPlugin("Factions") != null) {
-                    fac = true;
-                    if (!Factions.canBreakBlock(p, e.getBlock())) {
-                        e.setCancelled(true);
                         return;
                     }
                 }
@@ -111,97 +78,36 @@ public class BlockBreak implements Listener {
                 while (y < (rad + 1)) {
                     while (z < (rad + 1)) {
                         while (x < (rad + 1)) {
-                            //Register the block being broken with CoreProtect
-                            if (cp) {
-                                CoreProtect.registerBreak(p.getName(), e.getBlock().getRelative(x, y, z));
-                            }
-                            String current = e.getBlock().getRelative(x, y, z).getType().toString();
-                            //Check the world to see if the block is protected and shouldn't be broken
-                            Block b = e.getBlock().getRelative(x, y, z);
-                            if (wg && !WorldGuard.allowsBreak(b.getX(), b.getY(), b.getZ(), p)) {
-                                x++;
-                            } else if (fac && !Factions.canBreakBlock(p, e.getBlock().getRelative(x, y, z))) {
-                                x++;
+                            BlockPlaceEvent trenchRadiusBreak =
+                                    new BlockPlaceEvent(e.getBlock().getRelative(x, y, z),
+                                            e.getBlock().getRelative(x, y, z).getState(),
+                                            e.getBlock().getRelative(x, y, z), p.getItemInHand(),
+                                            p, false);
+                            String current = trenchRadiusBreak.getBlock().getType().toString();
+                            Bukkit.getPluginManager().callEvent(trenchRadiusBreak);
+                            if (trenchRadiusBreak.isCancelled()) {
                             } else if (blocks.contains(current)) {
                                 e.setCancelled(true);
-                                x++;
-                            } else if (isInsideBorder(e.getBlock().getRelative(x, y, z), e)) {
-                                x++;
+                            } else if (BlockWorldBorderCheck.isInsideBorder(trenchRadiusBreak.getBlock(),
+                                    trenchRadiusBreak, p)) {
                             } else if (lpf.getConfig().getBoolean("enable-natural-drops")) {
-                                //Don't run this if the block is air, don't increment the block count for air
-                                if (!e.getBlock().getRelative(x, y, z).getType().equals(Material.AIR)) {
-                                    try {
-                                        for (int i = 0; i < toolMeta.getLore().size(); i++) {
-                                            String l = toolMeta.getLore().get(i);
-                                            if (l.contains(bmID)) {
-                                                String mined = "";
-                                                for (int m = 0; m < toolLore.get(i).length(); m++) {
-                                                    if (Character.isDigit(toolLore.get(i).charAt(m))) {
-                                                        if (m != 0) {
-                                                            if (toolLore.get(i).charAt(m - 1) != ChatColor.COLOR_CHAR) {
-                                                                mined += toolLore.get(i).charAt(m);
-                                                            }
-                                                        } else {
-                                                            mined += toolLore.get(i).charAt(m);
-                                                        }
-                                                    }
-                                                }
-                                                int temp = Integer.parseInt(mined) + 1;
-                                                // Change the line of lore with the new number of blocks mined
-                                                String bmI = ChatColor.translateAlternateColorCodes('&',
-                                                        lpf.getTrench().getString(toolType + ".blocks-mined-increment-id")
-                                                                .replace("%blocksMined%", String.valueOf(temp)));
-                                                toolLore.set(i, (bmID + " " + bmI));
-                                                // Update the lore of the players item
-                                                toolMeta.setLore(toolLore);
-                                                p.getItemInHand().setItemMeta(toolMeta);
-                                            }
-                                        }
-                                    } catch (Exception ex) {
-                                        //The pickaxe isn't tracking the number of blocks mined, do nothing
-                                    }
+                                if (!trenchRadiusBreak.getBlockPlaced().getType().equals(Material.AIR)) {
+                                    UpdateMinedBlocks.updateLore(toolMeta, toolLore, p,
+                                            toolType, lpf, bmID);
                                 }
-                                e.getBlock().getRelative(x, y, z).breakNaturally();
-                                x++;
+                                trenchRadiusBreak.getBlock().breakNaturally();
                             } else {
-                                for (ItemStack item : e.getBlock().getRelative(x, y, z).getDrops()) {
+                                for (ItemStack item : trenchRadiusBreak.getBlock().getDrops()) {
                                     p.getInventory().addItem(item);
                                 }
-                                if (!e.getBlock().getRelative(x, y, z).getType().equals(Material.AIR)) {
-
-                                    try {
-                                        for (int i = 0; i < toolMeta.getLore().size(); i++) {
-                                            String l = toolMeta.getLore().get(i);
-                                            if (l.contains(bmID)) {
-                                                String mined = "";
-                                                for (int m = 0; m < toolLore.get(i).length(); m++) {
-                                                    if (Character.isDigit(toolLore.get(i).charAt(m))) {
-                                                        if (m != 0) {
-                                                            if (toolLore.get(i).charAt(m - 1) != ChatColor.COLOR_CHAR) {
-                                                                mined += toolLore.get(i).charAt(m);
-                                                            }
-                                                        } else {
-                                                            mined += toolLore.get(i).charAt(m);
-                                                        }
-                                                    }
-                                                }
-                                                int temp = Integer.parseInt(mined) + 1;
-                                                //Change the line of lore with the new number of blocks mined
-                                                String bmI = ChatColor.translateAlternateColorCodes('&', lpf.getTrench().getString(toolType + ".blocks-mined-increment-id").replace("%blocksMined%", String.valueOf(temp)));
-                                                toolLore.set(i, (bmID + " " + bmI));
-                                                //Update the lore of the players item
-                                                toolMeta.setLore(toolLore);
-                                                p.getItemInHand().setItemMeta(toolMeta);
-                                            }
-                                        }
-                                    } catch (Exception ex) {
-                                        //The pickaxe isn't tracking the number of blocks mined, do nothing
-                                    }
+                                if (!trenchRadiusBreak.getBlockPlaced().getType().equals(Material.AIR)) {
+                                    UpdateMinedBlocks.updateLore(toolMeta, toolLore, p,
+                                            toolType, lpf, bmID);
                                 }
-                                e.getBlock().getRelative(x, y, z).setType(Material.AIR);
-                                e.getBlock().getRelative(x, y, z).getDrops().clear();
-                                x++;
+                                trenchRadiusBreak.getBlock().setType(Material.AIR);
+                                trenchRadiusBreak.getBlock().getDrops().clear();
                             }
+                            x++;
                         }
                         x = -(lpf.getTrench().getInt(toolType + ".radius"));
                         z++;
@@ -214,33 +120,5 @@ public class BlockBreak implements Listener {
                 }
             }
         }
-    }
-
-    /**
-     * Method to check if a block is inside the world border or not
-     *
-     * @param b the block being checked
-     * @param e the event it is in
-     * @return boolean, true if the block is inside the border
-     */
-    private boolean isInsideBorder(Block b, BlockBreakEvent e) {
-        //Get the worldborder
-        WorldBorder wb = e.getBlock().getLocation().getWorld().getWorldBorder();
-        //Store the blocks location
-        int blockX = b.getX();
-        int blockZ = b.getZ();
-        //Get the actual worldborder size
-        double size = wb.getSize() / 2;
-        //Check if the block is inside, return true if it is
-        if (blockX > 0 && blockX > size - 1) {
-            return true;
-        } else if (blockX < 0 && blockX < (size * -1)) {
-            return true;
-        } else if (blockZ > 0 && blockZ > size - 1) {
-            return true;
-        } else if (blockZ < 0 && blockZ < (size * -1)) {
-            return true;
-        }
-        return false;
     }
 }

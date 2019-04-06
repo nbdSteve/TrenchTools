@@ -2,6 +2,7 @@ name: TrenchTools
 author: nbdSteve
 version: ${project.version}
 main: dev.nuer.trench.TrenchTools
+api-version: 1.13
 commands:
   trench:
     usage: /<command>

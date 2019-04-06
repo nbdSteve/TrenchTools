@@ -30,10 +30,10 @@ gui:
   #
   # The item that will fill the GUI besides the TrenchTools.
   # Use this format: ITEM_NAME-DATA_VALUE
-  fill-item: stained_glass_pane-15
+  fill-item: gray_stained_glass_pane-1
   #
   # The amount of the fill item that is displayed.
   fill-item-amount: 1
   #
   # If the fill item will appear enchanted in the GUI.
-  fill-item-glowing: true
+  fill-item-glowing: false

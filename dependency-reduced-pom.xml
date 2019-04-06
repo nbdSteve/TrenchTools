@@ -4,7 +4,7 @@
   <groupId>dev.nuer</groupId>
   <artifactId>TrenchTools</artifactId>
   <name>TrenchTools</name>
-  <version>3.1.4-[MC-.1.13+]</version>
+  <version>3.1.6-[MC-.1.13+]</version>
   <build>
     <defaultGoal>clean package</defaultGoal>
     <resources>
@@ -51,6 +51,19 @@
     <repository>
       <id>sk89q-repo</id>
       <url>http://maven.sk89q.com/repo/</url>
+    </repository>
+    <repository>
+      <id>minecraftforge</id>
+      <url>https://files.minecraftforge.net/maven</url>
+    </repository>
+    <repository>
+      <id>vault-repo</id>
+      <url>http://nexus.hc.to/content/repositories/pub_releases</url>
+    </repository>
+    <repository>
+      <id>sponge-repo</id>
+      <name>Sponge Maven Repository</name>
+      <url>https://repo.spongepowered.org/maven</url>
     </repository>
   </repositories>
   <dependencies>
@@ -171,6 +184,103 @@
       </exclusions>
     </dependency>
     <dependency>
+      <groupId>me.ryanhamshire</groupId>
+      <artifactId>griefprevention</artifactId>
+      <version>1.10.2-4.0.1.451</version>
+      <classifier>api</classifier>
+      <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>org.eclipse.egit.github.core</artifactId>
+          <groupId>org.eclipse.mylyn.github</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>net.milkbowl.vault</groupId>
+      <artifactId>VaultAPI</artifactId>
+      <version>1.7</version>
+      <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>bukkit</artifactId>
+          <groupId>org.bukkit</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.spongepowered</groupId>
+      <artifactId>spongeapi</artifactId>
+      <version>7.1.0</version>
+      <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>slf4j-api</artifactId>
+          <groupId>org.slf4j</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>error_prone_annotations</artifactId>
+          <groupId>com.google.errorprone</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>commons-lang3</artifactId>
+          <groupId>org.apache.commons</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>guice</artifactId>
+          <groupId>com.google.inject</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>caffeine</artifactId>
+          <groupId>com.github.ben-manes.caffeine</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>guava</artifactId>
+          <groupId>com.github.ben-manes.caffeine</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>plugin-meta</artifactId>
+          <groupId>org.spongepowered</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>configurate-hocon</artifactId>
+          <groupId>org.spongepowered</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>configurate-gson</artifactId>
+          <groupId>org.spongepowered</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>configurate-yaml</artifactId>
+          <groupId>org.spongepowered</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>flow-math</artifactId>
+          <groupId>com.flowpowered</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>flow-noise</artifactId>
+          <groupId>com.flowpowered</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>asm</artifactId>
+          <groupId>org.ow2.asm</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>guava</artifactId>
+          <groupId>com.google.guava</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>gson</artifactId>
+          <groupId>com.google.code.gson</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jsr305</artifactId>
+          <groupId>com.google.code.findbugs</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
       <groupId>com.massivecraft</groupId>
       <artifactId>MassiveCore</artifactId>
       <version>2.1.4</version>
@@ -190,13 +300,6 @@
       <version>1.4-RC-2</version>
       <scope>system</scope>
       <systemPath>${project.basedir}/src/main/lib/SavageFactions.jar</systemPath>
-    </dependency>
-    <dependency>
-      <groupId>net.milkbowl.vault</groupId>
-      <artifactId>VaultAPI</artifactId>
-      <version>1.7.1</version>
-      <scope>system</scope>
-      <systemPath>${project.basedir}/src/main/lib/Vault.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>net.coreprotect</groupId>

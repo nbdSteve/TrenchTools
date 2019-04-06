@@ -32,7 +32,6 @@ public class GenerateProvidedFile {
     public GenerateProvidedFile(String fileName) {
         file = new File(pl.getDataFolder(), fileName);
         if (!file.exists()) {
-            file.getParentFile().mkdirs();
             pl.saveResource(fileName, false);
             pl.getLogger().info("The supplied file " + fileName + " was not found, creating it now.");
         }

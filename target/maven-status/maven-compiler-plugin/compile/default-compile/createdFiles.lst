@@ -2,12 +2,10 @@ dev\nuer\trench\file\LoadProvidedFiles.class
 dev\nuer\trench\TrenchTools.class
 dev\nuer\trench\gui\TrenchGui.class
 dev\nuer\trench\file\providedfile\GenerateProvidedFile.class
-dev\nuer\trench\support\WorldGuard.class
-dev\nuer\trench\support\Factions.class
 dev\nuer\trench\event\BlockBreak.class
-dev\nuer\trench\support\MassiveCore.class
+dev\nuer\trench\methods\UpdateMinedBlocks.class
 dev\nuer\trench\command\TrenchCommand.class
 dev\nuer\trench\methods\AutoBlock.class
 dev\nuer\trench\event\gui\GuiClick.class
 dev\nuer\trench\file\LoadProvidedFiles$Files.class
-dev\nuer\trench\support\CoreProtect.class
+dev\nuer\trench\methods\BlockWorldBorderCheck.class

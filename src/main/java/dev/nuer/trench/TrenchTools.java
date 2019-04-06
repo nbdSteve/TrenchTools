@@ -1,9 +1,9 @@
 package dev.nuer.trench;
 
+import dev.nuer.trench.command.TrenchCommand;
 import dev.nuer.trench.event.BlockBreak;
 import dev.nuer.trench.event.gui.GuiClick;
 import dev.nuer.trench.file.LoadProvidedFiles;
-import dev.nuer.trench.command.TrenchCommand;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.RegisteredServiceProvider;
